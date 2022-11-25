@@ -1,0 +1,25 @@
+
+class Main {
+    public static void main(String[] args) {
+        rect r = new rect(3,4);
+        r.area();
+        Main m=new Main();
+        m.area1();
+    }
+}
+
+class rect{
+    double l;
+    double b;
+
+    public rect(double l, double b){
+        this.l=l;
+        this.b=b;
+    }
+    public void area(){
+        System.out.print(l*b);
+    }
+}
+public static void area1(){
+        System.out.print(l*b);
+    }
