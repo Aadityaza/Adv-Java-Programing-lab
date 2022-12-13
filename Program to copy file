@@ -1,0 +1,22 @@
+import java.io.*;
+
+public class CopyFile {
+  public static void main(String[] args) throws IOException {
+    // Source file
+    FileReader fr = new FileReader("source.txt");
+
+    // Destination file
+    FileWriter fw = new FileWriter("destination.txt");
+
+    int c;
+
+    // Read from source and write to destination
+    while ((c = fr.read()) != -1) {
+      fw.write(c);
+    }
+
+    // Close both files
+    fr.close();
+    fw.close();
+  }
+}
